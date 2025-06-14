@@ -12,8 +12,19 @@
     <body>
         <h1>Welcome to our website.</h1>
 
+        <hr>
+
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#food">Food</a></li>
+            </ul>
+        </nav>
+
         <hr> <!--Horizontal rule for visual-->
 
+        <section id="intro">
         <h2>Introduction</h2>
         <p>This is my very <em>first web page</em> to practice and learn more about HTML.</p>
 
@@ -21,10 +32,12 @@
         <p>I am an IT student, learning more about <strong>HTML!</strong></p>
             <ol>
             <li>~ I studied IT at <abbr title="James Cook University">JCU</abbr></li>
-            <li>~ I am studying Comp Science at <abbr title="Leeds Beckett University">LBU</abbr></li>
+            <li>~ I am studying Comp Science at <abbr title="Leeds Beckett University"><a href="https://www.leedsbeckett.ac.uk/">LBU</a></abbr></li>
             </ol>
-        
 
+        </section>
+        
+        <section id="hobbies">
         <h3>My Hobbies</h3>
         <p>I have several different hobbies outside of coding. </p>
         <ul>
@@ -40,6 +53,9 @@
 
         </ul>
 
+        </section>
+
+        <section id="food">
         <h3>Things I love to eat</h3>
         <p>I have many different favorite food that I love to eat. </p>
         <dl>
@@ -50,8 +66,14 @@
             <dd>Shan traditional noodle breakfast</dd>
         </dl>
 
+        </section>
+
         <hr>
 
-        &lt;&lt;&lt; &copy; Jason &gt;&gt;&gt;
+        &lt;&lt;&lt; &copy; <a href="about.html">Jason</a> &gt;&gt;&gt;
+
+        <p>
+            <a href="#">Back to top</a> <!--Internal link back to top-->
+        </p>
     </body>
 </html>
