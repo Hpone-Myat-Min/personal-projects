@@ -1,107 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Jason"> <!--About the author-->
-        <meta name="description" content="This page is about creating a very first HTML web page."> <!--About the webpage description for search engine -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jason" />
+    <!--About the author-->
+    <meta
+      name="description"
+      content="This page is about creating a very first HTML web page."
+    />
+    <!--About the webpage description for search engine -->
 
-        <title>Welcome Page</title>
-        <link rel="icon" href="img/html5.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
-    <body>
-        <h1>Welcome to our website.</h1>
+    <title>Welcome Page</title>
+    <link rel="icon" href="img/html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my website.</h1>
 
-        <hr>
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#food">Food</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <nav>
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#food">Food</a></li>
-            </ul>
-        </nav>
+    <hr />
+    <!--Horizontal rule to visually illustrate change of topic-->
 
-        <hr> <!--Horizontal rule for visual-->
-
-        <section id="intro">
+    <main>
+      <article id="intro">
         <h2>Introduction</h2>
-        <p>This is my very <em>first web page</em> to practice and learn more about HTML.</p>
+        <p>
+          This is my very <em>first web page</em> to practice and learn more
+          about HTML.
+        </p>
 
-        <img src="img/html5.png" alt="HTML5 icon" title="Learning HTML5" width="90" height="90">
-        <figure>
+        <section>
+          <h3>HTML5</h3>
+
+          <img
+            src="img/html5.png"
+            alt="HTML5 icon"
+            title="Learning HTML5"
+            width="90"
+            height="90"
+          />
+          <figure>
             <figcaption>HTML Code</figcaption>
             <p>
-                <code>
-                    &lt;h1&gt;Hello World!&lt;h1&gt;
-                </code>
+              <code> &lt;h1&gt;Hello World!&lt;h1&gt; </code>
             </p>
+          </figure>
+        </section>
 
+        <section>
+          <h3>About me</h3>
+          <p>I am an IT student, learning more about <strong>HTML!</strong></p>
+          <ol>
+            <li>
+              ~ I studied IT at <abbr title="James Cook University">JCU</abbr>
+            </li>
+            <li>
+              ~ I am studying Comp Science at
+              <abbr title="Leeds Beckett University"
+                ><a href="https://www.leedsbeckett.ac.uk/">LBU</a></abbr
+              >
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>Guess the number of hours I code per day.</summary>
+              <p>
+                I code from <time datetime="08:00">8am </time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              Schedule of my day
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time> -
+                  <time datetime="11:00">11am</time>
+                </td>
+                <td>Coding</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="11:00">11am</time> -
+                  <time datetime="12:00">12pm</time>
+                </td>
+                <td>Eat lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td>
+                  <time datetime="12:00">12pm</time> -
+                  <time datetime="15:00">3pm</time>
+                </td>
+                <td>Chilling</td>
+              </tr>
+              <tr>
+                <th scope="row">Rest</th>
+                <td rowspan="2">All other time</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">End of the day</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+
+      <article id="hobbies">
+        <h3>My Hobbies</h3>
+        <p>I have several different hobbies outside of coding.</p>
+
+        <figure>
+          <img
+            src="img/football.jpg"
+            alt="football-picture"
+            title="football"
+            width="350"
+            height="220"
+            loading="lazy"
+          />
+          <figcaption>Football on a football field</figcaption>
         </figure>
 
-        <h3>About me</h3>
-        <p>I am an IT student, learning more about <strong>HTML!</strong></p>
-            <ol>
-            <li>~ I studied IT at <abbr title="James Cook University">JCU</abbr></li>
-            <li>~ I am studying Comp Science at <abbr title="Leeds Beckett University"><a href="https://www.leedsbeckett.ac.uk/">LBU</a></abbr></li>
-            </ol>
-
-        </section>
-        
-        <section id="hobbies">
-        <h3>My Hobbies</h3>
-        <p>I have several different hobbies outside of coding. </p>
-
-        <figure>
-                <img src="img/football.jpg" alt="football-picture" title="football" width="350" height="220" loading="lazy">
-                <figcaption>
-                    Football on a football field
-                </figcaption>
-            </figure>
-
         <ul>
-            <li>~ Football</li>
-            <li><p>~ Watching boxing and martial arts matches.</p></li>
-            
-            <li>
-                <p>I wanted to try footballing at this location.</p>
-                <address>
-                    City Campus, Woodhouse Lane, <br>Leeds, LS1 3HE, <br>United Kingdom
-                </address>
-            </li>
+          <li>~ Football</li>
+          <li><p>~ Watching boxing and martial arts matches.</p></li>
 
+          <li>
+            <p>I wanted to try footballing at this location.</p>
+            <address>
+              City Campus, Woodhouse Lane, <br />Leeds, LS1 3HE, <br />United
+              Kingdom
+            </address>
+          </li>
         </ul>
+      </article>
 
-        </section>
+      <article id="food">
+        <h2>Food</h2>
+        <section>
+          <h3>Things I love to eat</h3>
+          <p>I have many different favorite food that I love to eat.</p>
 
-        <section id="food">
-        <h3>Things I love to eat</h3>
-        <p>I have many different favorite food that I love to eat. </p>
+          <figure>
+            <img
+              src="img/mohinga.jpg"
+              alt="Mohinga"
+              title="I am hungry!"
+              width="350"
+              height="200"
+              loading="lazy"
+            />
+            <figcaption>Myanmar Traditional Breakfast</figcaption>
+          </figure>
 
-        <figure>
-                <img src="img/mohinga.jpg" alt="Mohinga" title="I am hungry!" width="350" height="200" loading="lazy">
-                <figcaption>
-                    Myanmar Traditional Breakfast
-                </figcaption>
-            </figure>
-            
-        <dl>
+          <dl>
             <dt>Mohinga</dt>
             <dd>Fish broth with rice noodles from Myanmar</dd>
-            
 
             <dt>Shan Noodles</dt>
             <dd>Shan traditional noodle breakfast</dd>
-        </dl>
-
+          </dl>
         </section>
 
-        <hr>
+        <section>
+          <h3>Things I dont love to eat</h3>
+          <p>There are also many things that <mark>I do not like.</mark></p>
+          <dl>
+            <dt>Wasabi</dt>
+            <dd>The green paste usually contains in Japanese cuisine.</dd>
 
-        &lt;&lt;&lt; &copy; <a href="about.html">Jason</a> &gt;&gt;&gt;
+            <dt>Raw Meat</dt>
+            <dd>Some kinds of sashimi</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+    <hr />
 
-        <p>
-            <a href="#">Back to top</a> <!--Internal link back to top-->
-        </p>
-    </body>
+    <footer>
+      <p>&lt;&lt;&lt; &copy; <a href="about.html">Jason</a> &gt;&gt;&gt;</p>
+
+      <p>
+        <a href="#">Back to top</a>
+        <!--Internal link back to top-->
+      </p>
+    </footer>
+  </body>
 </html>
