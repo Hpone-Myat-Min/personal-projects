@@ -23,6 +23,7 @@
           <li><a href="#intro">Intro</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#food">Food</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -205,6 +206,67 @@
         </section>
       </article>
     </main>
+    <hr />
+
+    <article id="contact">
+      <h2>Contact Form</h2>
+      <p>Give me some feedbacks please thanks!</p>
+      <form action="https://httpbin.org/get" method="get">
+        <p>
+          <label for="firstName">First Name: </label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="name"
+            autofocus
+          />
+        </p>
+        <p>
+          <label for="lastName">Last Name: </label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="last name"
+          />
+        </p>
+
+        <p>
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="secret"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="decade">Favorite Decade: </label>
+          <input
+            type="number"
+            name="decade"
+            id="decade"
+            min="1950"
+            max="2020"
+            step="10"
+            value="1980"
+          />
+        </p>
+
+        <p>
+          <label for="coffee">Coffee choice: </label>
+          <select name="coffee" id="coffee">
+            <option value="regular coffee">Regular Coffee</option>
+            <option value="iced coffee">Iced Coffee</option>
+            <option value="latte">Latte</option>
+          </select>
+        </p>
+      </form>
+    </article>
+
     <hr />
 
     <footer>
