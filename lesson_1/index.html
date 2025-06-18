@@ -212,51 +212,53 @@
       <h2>Contact Form</h2>
       <p>Give me some feedbacks please thanks!</p>
       <form action="https://httpbin.org/get" method="get">
-        <p>
-          <label for="firstName">First Name: </label>
-          <input
-            type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="name"
-            autofocus
-          />
-        </p>
-        <p>
-          <label for="lastName">Last Name: </label>
-          <input
-            type="text"
-            name="lastName"
-            id="lastName"
-            placeholder="last name"
-          />
-        </p>
+        <fieldset>
+          <legend>Personal info</legend>
+          <p>
+            <label for="firstName">First Name: </label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="name"
+              autofocus
+            />
+          </p>
+          <p>
+            <label for="lastName">Last Name: </label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="last name"
+            />
+          </p>
 
-        <p>
-          <label for="password">Password: </label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="secret"
-            required
-          />
-        </p>
+          <p>
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="secret"
+              required
+            />
+          </p>
 
-        <p>
-          <label for="decade">Favorite Decade: </label>
-          <input
-            type="number"
-            name="decade"
-            id="decade"
-            min="1950"
-            max="2020"
-            step="10"
-            value="1980"
-          />
-        </p>
+          <p>
+            <label for="decade">Favorite Decade: </label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              min="1950"
+              max="2020"
+              step="10"
+              value="1980"
+            />
+          </p>
 
-        <!-- <p>
+          <!-- <p>
           <label for="coffee">Coffee choice: </label>
           <select name="coffee" id="coffee" multiple size="4">
             <optgroup label="coffee">
@@ -271,6 +273,93 @@
             <option value="others">Others</option>
           </select>
         </p> -->
+          <p>
+            <label for="coffee">Coffee choice: </label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list" />
+
+            <datalist id="coffee-list">
+              <option value="coffee">COFFEE</option>
+              <option value="latte">With Milk</option>
+              <option value="expresso"></option>
+              <option value="cortado"></option>
+              <option value="americano"></option>
+              <option value="others"></option>
+            </datalist>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>About Pets</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog" />
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat" />
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="Parrot" value="Parrot" />
+            <label for="Parrot">Parrot</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="otherPet" value="otherPet" />
+            <label for="otherPet">Other Pets</label>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Destination</legend>
+          <p>
+            <input type="radio" name="destination" id="yangon" value="yangon" />
+            <label for="yangon">Yangon</label>
+          </p>
+          <p>
+            <input type="radio" name="destination" id="Bago" value="Bago" />
+            <label for="Bago">Bago</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="destination"
+              id="Singapore"
+              value="Singapore"
+            />
+            <label for="Singapore">Singapore</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="destination"
+              id="Bangkok"
+              value="Bangkok"
+            />
+            <label for="Bangkok">Bangkok</label>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Other comments:</legend>
+          <label for="message">Your message:</label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Type your message here..."
+          ></textarea>
+        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button
+          type="submit"
+          formaction="https://httpbin.org/post"
+          formmethod="post"
+        >
+          Post
+        </button>
       </form>
     </article>
 
