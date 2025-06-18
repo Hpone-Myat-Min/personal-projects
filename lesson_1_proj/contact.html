@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jason" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page is to contact Jason's Donut shop."
+    />
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+
+      <nav>
+        <ul>
+          <li><a href="/lesson_1_proj/">Home</a></li>
+          <li><a href="/lesson_1_proj/#about">About JD</a></li>
+          <li><a href="/lesson_1_proj/#menu">Our Menu</a></li>
+          <li><a href="hours.html">Opening Hours</a></li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="img/donuts_display.jpg"
+          alt="donuts_display"
+          title="Donuts display"
+          width="300px"
+          height="200px"
+          loading="lazy"
+        />
+        <figcaption>Json's Donut Shop</figcaption>
+      </figure>
+    </header>
+    <hr />
+
+    <main>
+      <section id="form">
+        <h2>Our Contact Form</h2>
+        <form actoion="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send us a message</legend>
+            <p>
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                autofocus
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                required
+              />
+            </p>
+
+            <label for="message">Your Message: </label><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+      <hr />
+
+      <section id="address">
+        <h2>Our Location</h2>
+        <address>1-1 Maihama, Urayasu, <br />Chiba 279-0031, Japan</address>
+        <a href="#">Back to top</a>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>Copyright &copy; Json's Donuts</p>
+    </footer>
+  </body>
+</html>
