@@ -1,17 +1,32 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 1rem;
+    font-family: "Savate", sans-serif;
 }
 
-.container {
+p {
+    text-indent: 2em;
+    line-height: 1.5;
+    word-spacing: 0.5em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* .container {
     border: 2px double red;
     border-top-color: blue;
     width: 100%;
     font-size: 1.5rem;
     margin: 1.5em;
     padding: 1em;
-}
+} */
 
 .circle {
     background-color: lightskyblue;
@@ -19,7 +34,11 @@
     height: 100px;
     margin: 30px auto;
     border: 5px solid limegreen;
-    border-radius: 30px;
+    border-radius: 50px;
 }
+
+/* input, button {
+    font: inherit;
+} */
 
 
