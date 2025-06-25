@@ -37,8 +37,46 @@ p {
     border-radius: 50px;
 }
 
-/* input, button {
-    font: inherit;
-} */
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:hover, a:focus{ 
+    color: gray;
+    background: blue;
+}
+/* } to make it accessible for screen reader */
+
+a:active {
+    color: orange;
+}
+
+ol {
+    list-style-type:lower-alpha;
+    padding: 0;
+}
+
+ol li:nth-child(3) {
+    color: green;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blue;
+}
+
+ul ::marker {
+    font-size: 3em;
+    color: gold;
+    content: "Hello > ";
+}
 
 
