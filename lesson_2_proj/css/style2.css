@@ -1,0 +1,38 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 15px; */
+    background-color: rgb(202, 227, 227);
+    font-size: 2rem;
+    text-align: center;
+}
+
+main {
+        border: 2px solid black;
+        border-radius: 30px;
+}
+
+nav {
+    list-style-type: none;
+}
+
+.last-one {
+    border-radius: 0 0 30px 30px;
+}
+
+nav li a {
+    padding: 30px;
+    background-color: brown;
+    border: 0.5px solid black;
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+li a:hover, li a:focus {
+    background-color: pink;
+}
